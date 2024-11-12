@@ -1,0 +1,128 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: purple;
+  padding: 1rem 2rem;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navbar-links li a:hover {
+  color: lightgray;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  background-image: url("mountain-hero.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 24px;
+}
+.hero-image {
+    width: 150%;  /* Make the image span the entire width of the section */
+    height: auto;  /* Maintain aspect ratio */
+    max-height: 400px;  /* Ensure the image doesn't grow too large */
+   
+}
+/* About Section Styles */
+.about-section,
+.trails-section,
+.contact-section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.about-section h2,
+.trails-section h2,
+.contact-section h2 {
+  font-size: 32px;
+  margin-bottom: 1rem;
+}
+
+/* Contact Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  padding: 0.8rem;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.8rem;
+  font-size: 16px;
+  border: none;
+  background-color: purple;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: darkmagenta
+}
+
+/* Footer Styles */
+footer {
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}

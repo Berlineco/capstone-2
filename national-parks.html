@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="styling/styles.css" />
+ 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mountain Park</title>
+    <link rel="stylesheet" href="styles.css" />
+    
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="" class="navbar-logo">Enjoying Outdoors </a>
+        <ul class="navbar-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="national-parks.html">National-Parks</a></li>
+          <li><a href="mountains.html">Mountains</a></li>
+        </ul>
+      </div>
+    </nav>
+</body>
+<main class="container-md">
+<h1>National Parks</h1>
+<p>Filter By</p>
+<input type="radio" id="filterByLocation" name="filterOption" onchange="filterTypeChanged()" />
+<label for="filterByLocation"> Location </label>
+<input type="radio" id="byParkTypeRadio" name="filterOption" onchange="filterTypeChanged()" />
+<label for="byParkTypeRadio">Park Type </label>
+<select id="parksDropdown" onchange="filter()">
+  <option value="">Select...</option>
+</select>
+<table class="table table-bordered ">
+  <thead>
+   
+  </thead>
+  <tbody id="parksTBody">
+    <tr>
+      <td class="no-wrap"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<script src="scripts/locationData.js"></script>
+<script src="scripts/nationalParkData.js"></script>
+<script src="scripts/parkTypeData.js"></script>
+
+<script src="scripts/national-parks.js"></script>
+</main>
+<footer></footer>
+</body>
+</html>
